@@ -9,7 +9,8 @@ function urnaEletronica() {
     let totalVotosBrancos = 0;
     let totalVotosNulo = 0;
 
-    let voto;
+    let voto = 0;
+    let confirmacao = '';
 
     do {
 
@@ -24,27 +25,33 @@ function urnaEletronica() {
         voto = parseInt(prompt('Digite sua opção de voto:'));
 
         if (voto == 1) {
-            totalVotosCandidato1 ++;
+            totalVotosCandidato1++;
         } else if (voto == 2) {
-            totalVotosCandidato2 ++;
+            totalVotosCandidato2++;
         } else if (voto == 3) {
-            totalVotosCandidato3 ++;
+            totalVotosCandidato3++;
         } else if (voto == 5) {
-            totalVotosBrancos ++;
+            totalVotosBrancos++;
         } else if (voto == 8) {
-            totalVotosNulo ++;
+            totalVotosNulo++;
         } else if (voto == 0) {
+            confirmacao = prompt('Você tem certeza? Digite S ou N:');
 
         } else {
             return;
         }
 
-    } while (voto !== 0);
+    } while (confirmacao !== 'S');
 
-    console.log("Total de votos do candidato 1: "+totalVotosCandidato1)
-    console.log("Total de votos do candidato 2: "+totalVotosCandidato2)
-    console.log("Total de votos do candidato 3: "+totalVotosCandidato3)
-    console.log("Total de votos brancos: "+totalVotosBrancos)
-    console.log("Total de votos nulos: "+totalVotosNulo)
+
+
+
+    console.log("Total de votos do Bolsonaro: " + totalVotosCandidato1)
+    console.log("Total de votos do Lula: " + totalVotosCandidato2)
+    console.log("Total de votos do Ciro Gomes: " + totalVotosCandidato3)
+    console.log("Total de votos brancos: " + totalVotosBrancos)
+    console.log("Total de votos nulos: " + totalVotosNulo)
+
+
 
 }
