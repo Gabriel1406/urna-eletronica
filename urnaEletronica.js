@@ -9,8 +9,8 @@ function urnaEletronica() {
     let totalVotosBrancos = 0;
     let totalVotosNulo = 0;
 
-    let voto = 0;
-    let confirmacao = '';
+    let voto = 141206;
+    let confirmacao = 'N';
 
     do {
 
@@ -20,7 +20,6 @@ function urnaEletronica() {
         console.log('| 3 | Camdidato 3');
         console.log('| 5 | Branco');
         console.log('| 8 | Nulo');
-        console.log('| 0 | Encerrar a votação');
 
         voto = parseInt(prompt('Digite sua opção de voto:'));
 
@@ -34,7 +33,7 @@ function urnaEletronica() {
             totalVotosBrancos++;
         } else if (voto == 8) {
             totalVotosNulo++;
-        } else if (voto == 0) {
+        } else if (voto == 141206) {
             confirmacao = prompt('Você tem certeza? Digite S ou N:');
 
         } else {
