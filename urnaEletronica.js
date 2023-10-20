@@ -56,7 +56,7 @@ function urnaEletronica() {
 
 
     console.clear();
-    console.log('** BOLETIM DE URNA - RESULTADOS **');
+    console.log('BOLETIM DE URNA - RESULTADOS');
     console.log('Total de votos: ' + totalVotos);
     console.log('Total de votos do candidato 1: ' + totalVotosCandidato1 + ' voto(s) (' + (totalVotosCandidato1 / totalVotos * 100) + '%)');
     console.log('Total de votos do candidato 2: ' + totalVotosCandidato2 + ' voto(s) (' + (totalVotosCandidato2 / totalVotos * 100) + '%)');
